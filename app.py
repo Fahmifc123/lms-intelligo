@@ -101,5 +101,5 @@ def posttest_intro():
     return render_template('posttest_intro.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=52420)
+    app.run(debug=True, port=52421)
 
