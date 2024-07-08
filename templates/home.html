@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="static/logo-intelligo.png">
+    <title>LMS Bootcamp Intelligo ID</title>
+    <!-- Custom CSS -->
+    <link href="static/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
+    <link href="static/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="static/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="static/dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- CSS for full calender -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" rel="stylesheet" />
+<!-- JS for jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- JS for full calender -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+
+<link rel="stylesheet" href="../static/style.css" />
+
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-lg">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-lg-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <!-- Logo icon -->
+                        <a href="/">
+                            <img src="static/logo-svg.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-lg-none waves-effect waves-light" href="javascript:void(0)"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                            class="ti-more"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    
+                    
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar" data-sidebarbg="skin6">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/"
+                                aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                    class="hide-menu">Home</span></a></li>
+
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Modul</span></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                                aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                    class="hide-menu">Introduction </span></a>
+
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="/intro_intelligo" class="sidebar-link"><span
+                                        class="hide-menu" style="font-size: 14px;"> Intro Intelligo ID & Penjelasan
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="https://forms.gle/ivYfAgY9FWzRDxyw8" target="_blank" class="sidebar-link"><span
+                                  class="hide-menu" style="font-size: 14px;"> Test Riasec
+                                  </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="/intro_datascience" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;"> Intro Data Science
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="/posttest_intro" class="sidebar-link"><span
+                                  class="hide-menu" style="font-size: 14px;"> Post Test
+                              </span></a>
+                            </li>
+                            </ul>
+
+
+                            <!-- modul Python dibawah -->
+                        </li>
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                                <img src="static/python.png" alt="Python Icon" class="feather-icon">
+                                <span class="hide-menu">Python </span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;"> Python 1
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;"> Python 2
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;">
+                                            Python 3
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;">
+                                            Python 4
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;">
+                                            Python 5
+                                        </span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- modul data Analyst dibawah -->
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                                <img src="static/statistic.png" alt="Python Icon" class="feather-icon">
+                                <span class="hide-menu">Data Analyst </span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;"> Exploratory Data Analyst 1
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;"> SQL 1
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;">
+                                            SQL 2
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                    class="hide-menu" style="font-size: 14px;">
+                                    Exploratory Data Analyst 2
+                                </span></a>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                    class="hide-menu" style="font-size: 14px;">
+                                    Exploratory Data Analyst 3
+                                </span></a>
+                        </li>
+                            </ul>
+                        </li>
+
+                        <!-- modul statistics dibawah -->
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                                aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                    class="hide-menu">Statistics </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;"> Central Tendency
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;"> Descriptive & Inferential </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                            class="hide-menu" style="font-size: 14px;"> Case Study </span></a></li>
+                                
+                            </ul>
+                        </li>
+                       
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Authentication</span></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
+                            href="/change_password" aria-expanded="false"><i data-feather="lock"
+                                class="feather-icon"></i><span class="hide-menu">Ganti Password
+                            </span></a>
+                    </li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/logout"
+                            aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
+                                class="hide-menu">Logout</span></a></li>
+
+                       
+                                    
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 align-self-center">
+                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Selamat Datang di LMS, Semangat Belajar!</h3>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                          <h4>Important Links 🔗</h4> 
+                                              <a href="https://lms.intelligo.id/" target="_blank">Link LMS</a> &nbsp; | &nbsp;
+                                              <a href="https://meet.google.com/kcj-jbiu-wqo" target="_blank">Link to Google Meet</a> &nbsp; | &nbsp;
+                                              <a href="https://bit.ly/absensi-bootcamp-intelligo" target="_blank">Absensi Live Session</a> &nbsp; | &nbsp;
+                                              <a href="https://drive.google.com/file/d/1jxl2Hgxw4Gopcmmrvy96aARcHq4DPfTB/view?usp=sharing" target="_blank">Link Background Google Meet</a> &nbsp; | &nbsp;
+                                              <a href="https://docs.google.com/spreadsheets/d/1Sx24eqX5mufPp0EMvuppnVoknpUy26xLN805RURCqh4/edit?usp=sharing" target="_blank">Google Sheet Jadwal & Rekapan Recording</a>
+                                              
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- *************************************************************** -->
+                <!-- Start First Cards -->
+                <!-- *************************************************************** -->
+            
+
+                <div class="row">
+                    <!-- konten pertama untuk home  -->
+                    <div class="event-container">
+                      <center> <h2>Calendar</h2> </center>
+                        <h3 class="year">Juli 2024</h3>
+                  
+                        <div class="event">
+                          <div class="event-left">
+                            <div class="event-date">
+                              <div class="date">9</div>
+                              <div class="month">Selasa</div>
+                            </div>
+                          </div>
+                          
+                          <div class="event-right">
+                            <h3 class="event-title">Deadline Tugas</h3>
+                  
+                            <div class="event-description">
+                              Pengumpulan Tugas Post Test Intro Data Science
+                            </div>
+                  
+                            <div class="event-timing">
+                              <img src="static/time.png" alt="" /> 17.00 WIB
+                            </div>
+                          </div>
+
+                          <div class="event-right">
+                            <h3 class="event-title">Pre Test Python</h3>
+                  
+                            <div class="event-description">
+                              Pengerjaan Pre Test Modul Python
+                            </div>
+                  
+                            <div class="event-timing">
+                              <img src="static/time.png" alt="" /> 19.30 WIB
+                            </div>
+                          </div>
+                  
+                          <div class="event-right">
+                            <h3 class="event-title">Live Session - Pertemuan 3</h3>
+                  
+                            <div class="event-description">
+                                Python Basic 1 - Introduction to Python, IDE Python, Coding style, Tools Installation.
+                            </div>
+                  
+                            <div class="event-timing">
+                              <img src="static/time.png" alt="" /> 19.30-21.30 WIB
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="event">
+                          <div class="event-left">
+                            <div class="event-date">
+                              <div class="date">11</div>
+                              <div class="month">Kamis</div>
+                            </div>
+                          </div>
+                  
+                          <div class="event-right">
+                            <h3 class="event-title">Live Session - Pertemuan 4</h3>
+                  
+                            <div class="event-description">
+                                Python Basic 2 - Variabel dan tipe data, Operator,  Input output,  Logika/kondisi IF - Else
+                            </div>
+                  
+                            <div class="event-timing">
+                                <img src="static/time.png" alt="" /> 19.30-21.30 WIB
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- <h3 class="year">2021</h3>
+                  
+                        <div class="event">
+                          <div class="event-left">
+                            <div class="event-date">
+                              <div class="date">8</div>
+                              <div class="month">Jan</div>
+                            </div>
+                          </div>
+                  
+                          <div class="event-right">
+                            <h3 class="event-title">Some Title Here</h3>
+                  
+                            <div class="event-description">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+                              ratione.
+                            </div>
+                  
+                            <div class="event-timing">
+                              <img src="images/time.png" alt="" /> 10:00 am
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="event">
+                          <div class="event-left">
+                            <div class="event-date">
+                              <div class="date">9</div>
+                              <div class="month">Mar</div>
+                            </div>
+                          </div>
+                  
+                          <div class="event-right">
+                            <h3 class="event-title">Some Title Here</h3>
+                  
+                            <div class="event-description">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+                              ratione.
+                            </div>
+                  
+                            <div class="event-timing">
+                              <img src="images/time.png" alt="" /> 10:30 am
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="event">
+                          <div class="event-left">
+                            <div class="event-date">
+                              <div class="date">4</div>
+                              <div class="month">Apr</div>
+                            </div>
+                          </div>
+                  
+                          <div class="event-right">
+                            <h3 class="event-title">Some Title Here</h3>
+                  
+                            <div class="event-description">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+                              ratione.
+                            </div>
+                  
+                            <div class="event-timing">
+                              <img src="images/time.png" alt="" /> 10:00 am
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="event">
+                          <div class="event-left">
+                            <div class="event-date">
+                              <div class="date">8</div>
+                              <div class="month">Jun</div>
+                            </div>
+                          </div>
+                  
+                          <div class="event-right">
+                            <h3 class="event-title">Some Title Here</h3>
+                  
+                            <div class="event-description">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+                              ratione.
+                            </div>
+                  
+                            <div class="event-timing">
+                              <img src="images/time.png" alt="" /> 10:00 am
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                    
+                </div>
+                <!-- *************************************************************** -->
+                <!-- End First Cards -->
+                <!-- *************************************************************** -->
+                <!-- *************************************************************** -->
+                <!-- Start Sales Charts Section -->
+                <!-- *************************************************************** -->
+    
+                <!-- *************************************************************** -->
+                <!-- End Top Leader Table -->
+                <!-- *************************************************************** -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center text-muted">
+                Copyright © 2023 Intelligo ID. Made By PT Paham Data Indonesia
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="static/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="static/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- apps -->
+    <!-- apps -->
+    <script src="static/dist/js/app-style-switcher.js"></script>
+    <script src="static/dist/js/feather.min.js"></script>
+    <script src="static/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="static/dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="static/dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <script src="static/assets/extra-libs/c3/d3.min.js"></script>
+    <script src="static/assets/extra-libs/c3/c3.min.js"></script>
+    <script src="static/assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="static/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="static/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="static/assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="static/dist/js/pages/dashboards/dashboard1.min.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,23 @@
+# flask instant deploy
+# deployed by DomaiNesia
+Options +FollowSymLinks -Indexes
+IndexIgnore *
+DirectoryIndex
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^(.*)$ http://127.0.0.1:52420/$1 [P]
+</IfModule>
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/intelli3/lms.intelligo.id"
+PassengerBaseURI "/"
+PassengerNodejs "/home/intelli3/nodevenv/lms.intelligo.id/10/bin/node"
+PassengerAppType node
+PassengerStartupFile app.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
