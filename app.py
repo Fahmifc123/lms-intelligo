@@ -100,6 +100,7 @@ def posttest_intro():
         return redirect(url_for('index'))
     return render_template('posttest_intro.html')
 
+
 @app.route('/python_basic')
 def python_basic():
     if 'username' not in session:
@@ -107,6 +108,12 @@ def python_basic():
         return redirect(url_for('index'))
     return render_template('python_basic.html')
 
+@app.route('/posttest_python')
+def posttest_python():
+    if 'username' not in session:
+        flash('Silakan login terlebih dahulu.', 'error')
+        return redirect(url_for('index'))
+    return render_template('posttest_python.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=52421)
