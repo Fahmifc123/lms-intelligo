@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session, f
 import json
 
 app = Flask(__name__)
-app.secret_key = 'intelligoid'  # Digunakan untuk mengamankan session
+app.secret_key = 'intelligo.id'  # Digunakan untuk mengamankan session
 
 # Fungsi untuk memuat data pengguna dari file JSON
 def load_users():
